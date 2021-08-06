@@ -9,6 +9,34 @@ body{
     background-color: #c5c6c7;
   
 }
+#Main-modal{
+  display: block;
+  position: fixed;
+  top: 0; 
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #1f2833;
+  text-align: center;
+  z-index: 90;
+  padding-top: 2rem;
+}
+#Main-modal h1{
+  font: bold 5rem 'Bangers', cursive;
+  letter-spacing: 0.5rem;
+  color: #fff;
+}
+#Main-modal img{
+  display: block;
+  width: 25%;
+  margin: 1rem auto;
+}
+#Main-modal input{
+  display: block;
+  width: 10%;
+  padding: 1rem;
+  margin: 1rem auto;
+}
 nav{
   padding: 0px; 
   height: 65px;
