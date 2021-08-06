@@ -142,14 +142,15 @@ section{
 }
 
 .pindutan{
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 5%;
   border: 2px solid #66fcf1;
   background-color: #0b0c10;
   font-size: 15px;
   padding: 12px;
-  margin-top: 300px;
-  margin-left: -520px;
   color: #c5c6c7;
-  float: left;
   font-family: calibri;
 }
 
