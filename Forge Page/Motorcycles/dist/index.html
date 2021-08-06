@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="workbench">
+        <ul class="workbench_list">
+          <li class="workbench_item workbench_item-title">
+            <img src="http://www.martinhofmann.com/images/svg-motorcycle-medium.png" alt="SVG Motorcycle" class="motorcycle-thumbnail"/>
+            <h1 class="workbench_head">WheelForge Sample</h1>
+          </li>
+          <li class="workbench_item">
+            <button class="btn_tool" data-object="build-button" data-behavior="build-motorcycle">
+              <span class="btn_tool_label" data-object="label">
+                Build <span class="h-mobile">Motorcycle</span>
+              </span>
+            </button>
+          </li>
+          <li class="workbench_item">
+            <button class="btn_tool" disabled data-object="start-button" data-behavior="start-engine">
+              <span class="btn_tool_label" data-object="label">
+                Start <span class="h-mobile">Engine</span>
+              </span>
+            </button>
+          </li>
+          <li class="workbench_item">
+            <button class="btn_tool" disabled data-object="twist-button" data-behavior="twist-throttle">
+              <span class="btn_tool_label" data-object="label">
+                Twist Throttle
+              </span>
+            </button>
+          </li>
+        </ul>
+    </aside>
+    <div class="driveway">
+      <section class="motorcycle" data-object="motorcycle-object">
+        <ul class="parts_list">
+            <li class="parts_item part-engine">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/engine.svg" alt="Engine" data-part-id="1"/>
+            </li>
+            <li class="parts_item part-exhaust-pipe">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/exhaust-pipe.svg" alt="Exhaust Pipe" data-part-id="2"/>
+            </li>
+            <li class="parts_item part-fender-front">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/fender-front.svg" alt="Front Fender" data-part-id="3"/>
+            </li>
+            <li class="parts_item part-fender-rear">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/fender-rear.svg" alt="Rear Fender" data-part-id="4"/>
+            </li>
+            <li class="parts_item part-fork">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/fork.svg" alt="Fork" data-part-id="5"/>
+            </li>
+            <li class="parts_item part-frame-background">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/frame-background.svg" alt="Background Frame" data-part-id="6"/>
+            </li>
+            <li class="parts_item part-frame-foreground">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/frame-foreground.svg" alt="Foreground Frame" data-part-id="6"/>
+            </li>
+            <li class="parts_item part-gas-tank">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/gas-tank.svg" alt="Gas Tank" data-part-id="7"/>
+            </li>
+            <li class="parts_item part-handelbars">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/handlebars.svg" alt="Handlebars" data-part-id="8"/>
+            </li>
+            <li class="parts_item part-number-plate">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/number-plate.svg" alt="Number Plate" data-part-id="9"/>
+            </li>
+            <li class="parts_item part-seat">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/seat.svg" alt="Seat" data-part-id="10"/>
+            </li>
+            <li class="parts_item part-shock-rear">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/shock-rear.svg" alt="Shock Rear" data-part-id="11"/>
+            </li>
+            <li class="parts_item part-swing-arm">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/swing-arm.svg" alt="Swing Arm" data-part-id="12"/>
+            </li>
+            <li class="parts_item part-front-wheel">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/wheel.svg" alt="Front Wheel" data-part-id="13"/>
+            </li>
+            <li class="parts_item part-rear-wheel">
+              <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/wheel.svg" alt="Rear Wheel" data-part-id="14"/>
+            </li>
+          </ul>
+        <div class="parts_item part-shadow">
+          <img class="part" src="http://www.martinhofmann.com/images/svg-motorcycle-parts/shadow.svg" alt="Shadow"/>
+        </div>
+      </section>
+      
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

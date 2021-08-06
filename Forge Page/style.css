@@ -1,0 +1,1098 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    background: url('image/BG.gif') center / cover;
+    overflow-x: hidden;
+}
+header nav{
+    background-image: url(wf_bcard_bluebg.jpg);
+    transform: translateX(2%);
+}
+.collapse ul{
+    position: absolute;
+    right: 2%;
+    list-style-type: none;
+}
+ul li a.active,a:hover{
+        background: #45A29E;
+        transition: .5s;
+}
+#models-cont{
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background: url('image/BG.gif') center / cover;
+}
+#greeting{
+    display: block;
+    width: 53%;
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    background-color: rgba(80,10,100, 0.7);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+#greeting img{
+    float: left;
+    width: 35%;
+    margin: 2px 10px;
+}
+#webname{
+    display: inline-block;
+    position:relative;
+    margin: 0;
+    text-align: left;
+    width: 20%;
+    font: bold 2.2rem fantasy;
+}
+.navbar-brand img{
+    float: left; 
+    margin: 0 0.7rem 0 0.8rem;
+    width: 5%;
+}
+
+
+/* This Designs the main heading of the page */
+#slidingBG{
+    margin: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.slide-caption{
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    bottom: 10%;
+    left: 5%;
+    width: 30%;
+    padding: 1rem 2rem;
+    margin: 0;
+    background-color: rgba(219, 207, 223, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 16px rgba(219, 207, 223, 0.6);
+    color: #000;
+    text-align: center;
+    text-shadow: 2px 2px 4px#fff;
+}
+.slide-caption h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'MonteCarlo', cursive;
+}
+.slide-caption p{
+    font: bold 1.4rem monospace;
+}
+
+#forge-greet{
+    display: block;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    background: url('nameBG.gif') center/cover;
+    box-shadow: 0 0 20px 16px #66FCFf;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font: 2rem fantasy;
+}
+.slide-show{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide1{
+    background: url('https://vectr.com/fullmetal045/d3DB09GW.svg?width=640&height=640&select=d3DB09GWpage0') center/cover no-repeat;
+}
+.slide2{
+    background: url('image/slider2.gif') center/cover no-repeat;
+}
+.slide3{
+    background: url('image/slider3.jpeg') center/cover no-repeat;
+}
+.slide4{
+    background: url('image/head4.jpg') center/cover no-repeat;
+}
+#firstHead{
+    display: block;
+    float: right;
+    padding: 1rem 2rem;
+    width: 30%;
+    height: 70vh;
+    margin: 2rem 0 1rem 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgba(219, 207, 223, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px 16px rgba(219, 207, 223, 0.6);
+    color: #000;
+    border-radius: 20px;
+    text-align: center;
+    animation: fading 2s 1s ease-out 1 forwards;
+}
+@keyframes fading {
+    0% {margin-right: 100rem; opacity: 1;}
+    25% {margin-right: 40rem; opacity: 0.4;}
+    50% {margin-right: 20rem; opacity: 0.4;}
+    75% {margin-right: 10rem; opacity: 0.6;}
+    100% {margin-right: 3rem; opacity: 0.8;}
+}
+
+#firstHead h1{
+    font: 2rem fantasy;
+}
+#firstHead p{
+    text-shadow: 2px 2px 4px#fff;
+    margin-top: 2rem;
+    font: bold 1.5rem monospace;
+}
+#firstHead a{
+    font: 1.2rem fantasy;
+    margin: 1rem auto;
+    padding:0.2rem 0.4rem;
+    background-image: url('parts/cog-small.gif');
+    border-radius: 20px;
+    z-index: 100;
+    color: #0cf;
+    text-shadow: 3px 3px 7px #000;
+    box-shadow: 0 0 7px 3px #f00;
+}
+#firstHead a:hover{
+    transform:scale(1.1);
+    color: #f00;
+    box-shadow: 0 0 7px 3px #0cf;
+}
+#see-latest{
+    display: flex;
+  justify-content: center;
+    position: absolute;
+    margin: 1rem 1rem 1.2rem 0;
+    bottom: 0;
+}
+/* Wheel Animation */
+
+#mainWheel{
+    position: absolute;
+    top: 7%;
+    margin: 1rem 0;
+    z-index: -1;
+    left: 5%;
+    width: 85%;
+    animation:
+    moving 5s 3s linear alternate infinite,
+    rotating 4s 3s ease-in-out infinite;
+    transform-origin:52% 57%;
+}
+.fH-logo{
+    float: left;
+    width: 24%;
+    margin: 0 1rem 0 0;
+    fill-opacity: 20px;
+    background: url('bhcontainerbg.gif') center / cover;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+@keyframes moving {
+    0% {left: 5%;}
+    15% {left:-5%;}
+    30% {left: -20%;}
+    45% {left: -5%;}
+    60% {left: 10%;}
+    75% {left: 30%;}
+    90% {left: 10%;}
+    100% {left: 5%;}
+}
+@keyframes rotating {
+    from   {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+/* This Designs the Building of motorcycle */
+#customize{
+    display: inline-block;
+    background-color: rgba(219, 207, 223, 0.8);
+    backdrop-filter: blur(60px);
+    box-shadow: 0 0 20px 16px rgba(219, 207, 223, 0.6);
+    color: #000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 -5rem;
+    overflow: hidden;
+    width: 20vw;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 20px;
+}
+#customize h3{
+    font: 1.5rem fantasy;
+}
+#customize ul li input{
+    font: bold 1.2rem monospace;
+    transition: 2s;
+    margin: 0;
+    width: 100%;
+}
+#customize ul li input:hover{
+    background: url('matrix2.gif') center / cover;
+    border-radius: 20px;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 15px #06f;
+    color: #fff;
+}
+form{
+    display: block;
+    margin: 0;
+}
+.Builder{
+    display: block;
+    position: relative;
+    margin: 0.3rem 1rem 5rem auto;
+    width: 76%;
+    height: 1000px;
+    overflow: hidden;
+    background-color: rgba(219, 207, 223, 0.8);
+    backdrop-filter: blur(70px);
+    box-shadow: 0 0 20px 16px rgba(219, 207, 223, 0.6);
+    animation: checkoutmodal2 1s linear 1 forwards;
+}
+@keyframes checkoutmodal2{
+    0% {width: 100%;}
+    100% {width: 76%;}
+}
+.order-now{
+    display: block;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 76%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 999;
+    background-color: rgba(219, 207, 223, 0.8);
+    backdrop-filter: blur(70px);
+    animation: checkoutmodal1 1s linear 1 forwards;
+}
+@keyframes checkoutmodal1 {
+    0% {width: 76%;}
+    100% {width: 100%;}
+}
+#forge-success{
+    display: block;
+    width: 35%;
+    color: #66FCF1;
+    padding: 10px;
+    left: -500%;
+    background-color: #000;
+    top: 8%;
+    font-style: monospace;
+}
+#success-spec li span{
+    font: bold 1rem cursive;
+}
+.forge-in{
+    position: absolute;
+    left: -500%;
+    animation: fade-out 1s linear 1 forwards;
+}
+@keyframes fade-out{
+    0% {left: 0;}
+    100% {left: -500%;}
+}
+.forge-details{
+    position: absolute; 
+    background-color: #000;
+    z-index: 50;
+    animation: fade-in 1s linear 1 forwards;
+}
+@keyframes fade-in {
+    0% {left: -500%;}
+    100% {left: 0%;}
+}
+.checked-out{
+    display: block;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    background: url('nameBG.gif') center/cover;
+    box-shadow: 0 0 20px 16px #66FCFf;
+    text-align: center;
+    color: #66FCFf;
+    border-radius: 20px;
+    font: 2rem fantasy;
+}
+#dmContainer{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 5rem -8rem 0 auto;
+    animation:
+    roam 2s linear 1;
+    animation-play-state: running;
+}
+@keyframes roam{
+    0% {transform: translateX(-18%); opacity: 0.2;}
+    25% {transform: translateX(0%); opacity: 0.4;}
+    50% {transform: translateX(15%); opacity: 0.5;}
+    75% {transform: translateX(30%); opacity: 0.6;}
+    100% {transform: translateX(5%); opacity: 0.8;}
+}
+#dmContainer1{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin:  2rem -10rem 0 auto;
+    animation:wheelie 5s linear infinite;
+}
+@keyframes wheelie {
+    0%   {
+      transform: rotate(0deg);
+    }
+    10%   {
+      transform: rotate(0deg);
+    }
+    15%  {
+      transform: rotate(-10deg);
+    }
+    20%  {
+      transform: rotate(-10deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+.forge-end{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    right: 0;
+    width: 63%;
+    padding: 1rem 0.5rem;
+    background-color: #000;
+    color: #66FCF1;
+    font: bold 0.6rem monospace;
+    border-radius: 20px;
+}
+.forge-end img{
+    margin: 0.5rem 1.4rem;
+}
+.forge-end input{
+    position: relative;
+    z-index: 30;
+    margin: 0.2rem;
+}
+
+
+/* Other Designs */
+.modalPop{
+  display: block;
+  width: 40%;
+  background-color: rgba(0,0,0,1);
+  box-shadow: 0 0 20px 16px #66FCF1;
+  margin: 0.3rem auto;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  border: 3px solid #fff;
+}
+
+#chasisOpt h3{
+  font: bold 2rem monospace;
+}
+#chasesOpt input{
+    position: relative;
+    z-index: 100;
+}
+.driveway{
+  display: block;
+  margin: 8rem auto 0 auto;
+  position:relative;
+  width: 600px;
+  height:500px;
+  z-index: -10;
+}
+
+.motorcycle{
+    transform: scale(0.75, 0.75);
+    transform-origin: top;
+}
+.parts_list{
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+.parts_item{
+    margin: 0;
+    padding: 0;
+}
+
+#motorSkeleton{
+    position: absolute;
+    top: -163px;
+    left:-160px;
+    width: 150%;
+    z-index: -1;
+}
+
+#frontW{
+    position: absolute;
+    top: -30px;
+    left: 103px;
+    width: 165%;
+    z-index: -2;
+    animation: rolling1 0.6s linear infinite;
+    transform-origin: 50.2% 40%;
+}
+
+#rearW{
+    position: absolute;
+    width:165%;
+    top: -7px;
+    left: -445px;
+    z-index: -2;
+    animation: rolling1 0.6s linear infinite;
+    transform-origin: 50.2% 40%;
+}
+@keyframes rolling1{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+#engine{
+    position: absolute;
+    z-index: -1;
+    width: 23%;
+    top: 260px;
+    left: 160px;
+    animation: shake 0.003s linear infinite;
+}
+@keyframes shake{
+    0% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+.parts-on-left{
+  position: relative;
+  top: -12%;
+  left: -120%;
+}
+.flash-chasis-r{
+  display: none;
+  position: absolute;
+  width: 50%;
+  z-index: 0;
+  left: 0%;
+  animation: 
+  forgeRC 2s steps(1, end) 1 forwards,
+  volted 0.03s 3s linear alternate 4;
+  animation-play-state: running;
+}
+.creed-chasis-r{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 123%;
+    animation: 
+    forgeCR 2s steps(1, end) 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+    animation-play-state: running;
+}
+.xforce-chasis-r{
+    display: none;
+    position: absolute;
+    top: -7rem;
+    left: 75%;
+    z-index: 0;
+    width: 123%;
+    animation: 
+    forgeXR 2s steps(1, end) 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+    animation-play-state: running;
+}
+.transcend-chasis-r{
+    display: block;
+    position: absolute;
+    top: -7rem;
+    left: 75%;
+    z-index: 0;
+    width: 123%;
+    animation: 
+    forgeXR 2s steps(1, end) 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+    animation-play-state: running;
+}
+@keyframes forgeXR {
+    0% {left: 60%; width: 105%;}
+    100% {left: 75%; width: 123%;}
+}
+@keyframes forgeCR{
+    0% {top: -3rem; left: 90%; width: 115%;}
+    100% {top: -4.8rem; left: 93%; width: 120%;}
+}
+@keyframes forgeRC {
+    0% {left: 89%; width: 80%;}
+    100%{left: 92%; width: 115%;}
+}
+@keyframes volted{
+    0% {transform: scale(1.1);}
+    100% {transform: scale(1.2);}
+}
+.parts-on-right{
+  position: relative;
+  top: -15%;
+  right: -150%;
+}
+.flash-chasis-f{
+  display: none;
+  position: absolute;
+  width: 90%;
+  right: 0%;
+  z-index: 0;
+  animation: 
+  forgeFC 1s steps(1, end) 1 forwards, 
+  volted 0.03s 3s linear alternate 4;
+  animation-play-state: running;
+}
+@keyframes forgeFC {
+    0% {right: 124%; width: 90%;}
+    100%{right: 124%; width: 107%;}
+}
+.creed-chasis-f{
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 95%;
+  right: 117%;
+  z-index: 0;
+  animation: 
+  forgeCC 1s steps(1, end) 1 forwards, 
+  volted 0.03s 3s linear alternate 4;
+  animation-play-state: running;
+}
+@keyframes forgeCC {
+    0% {top: -2rem; right: 117%; width: 95%;}
+    100%{top: -4.3rem; right: 129%; width: 114%;}
+}
+.xforce-chasis-f{
+  display: none;
+  position: absolute;
+  top: -7rem;
+  width: 95%;
+  right: 0%;
+  z-index: 2;
+  animation: 
+  forgeXF 1s steps(1, end) 1 forwards, 
+  volted 0.03s 3s linear alternate 4;
+  animation-play-state: running;
+}
+@keyframes forgeXF{
+    0% {right: 117%; width: 95%;}
+    100% {right: 128%; width: 115%;}
+}
+.transcend-chasis-f{
+    display: block;
+    position: absolute;
+    top: -2.3rem;
+    width: 95%;
+    right: 30%;
+    z-index: 2;
+    animation: 
+    forgeTF 1s steps(1, end) 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+    animation-play-state: running;
+}
+@keyframes forgeTF{
+    0% {right: 117%; width: 95%;}
+    100% {right: 135%; width: 115%;}
+}
+/* Tyres styling and Animations */
+.tyre-list-l{
+    display: none;
+    position: absolute;
+    width: 35%;
+    z-index: -1;
+    animation: 
+    forge1RW 0.7s linear 1 forwards, 
+    rolling1 2s linear infinite, 
+    volted 0.07s 1.5s linear alternate 7;
+    animation-play-state: running;
+}
+.tyre-list-r{
+    display: none;
+    position: absolute;
+    width: 35%;
+    z-index: -1;
+    animation: 
+    forge1FW 1.4s linear 1 forwards, 
+    rolling1 2s linear infinite, 
+    volted 0.07s 1.5s linear alternate 7;
+    animation-play-state: running;
+}
+.reverse-tyres{
+    display:none;
+    position: absolute;
+    width: 55%;
+    z-index: -1;
+    animation: rolling1 2.5s linear reverse infinite,
+    outRoll1 3s linear 1 forwards;
+    animation-play-state: running;
+}
+@keyframes outRoll1{
+    0% {left: 123%; display: block;}
+    100% {left: 0; display: none;}
+}
+.spiked-wheel-r{
+    top: 14.8rem;
+    left: 0;
+}
+.cruiser-wheel-r{
+    width: 43%;
+    top: 13.5rem;
+    left: 0;
+    margin-left: -8%;
+    transform-origin: 52.2% 55.9%;
+}
+.sport-wheel-r{
+    width: 46%;
+    left: 111%;
+    top: 13rem;
+    margin-left: -10%;
+    transform-origin: 52.2% 55.9%;
+}
+.touring-wheel-r{
+    width: 46%;
+    left: 111%;
+    top: 13rem;
+    margin-left: -10%;
+    transform-origin: 52.2% 55.9%;
+}
+@keyframes forge1RW{
+    0% {left: 20%;}
+    100% {left: 123%;}
+}
+/* Handle bars styling and animations */
+.handle-MC{
+    display: block;
+    position: absolute;
+    left: 120%;
+    top: -50rem;
+    z-index: 1;
+    animation: handleForge 0.8s linear 1 forwards,
+    volted 0.03s 1.3s linear alternate 4;
+}
+.unhandle{
+    display: block;
+    position: absolute;
+    left: 120%;
+    top: -50rem;
+    z-index: 1;
+    animation: unforgeHandle 0.8s linear 1 forwards,
+    volted 0.03s 1.3s linear alternate 4;
+}
+@keyframes handleForge{
+    0% {top: -5rem; left: 120%;}
+    100%{top: 4.2rem; left: 172%;}
+}
+@keyframes unforgeHandle{
+    0% {top: 4.2rem; left: 150%;}
+    100% {top: -50rem; left: 120%;}
+}
+.straightHandle{
+    display: none;
+    width: 20%;
+}
+.curvedHandle{
+    display: none;
+    margin: -6.3rem 0 0 -8rem;
+    width: 44%;
+}
+.highHandle{
+    display: none;
+    margin: -4rem 0 0 -7.2rem;
+    width: 48%;
+}
+/* Muffler styling and animations */
+.muffler-list{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    animation: forgeMuffs 1s linear 1 forwards,
+    volted 0.03s 1.3s linear alternate 4;
+}
+@keyframes forgeMuffs{
+    0%{left: 0;}
+    100%{left: 109%;}
+}
+.muffler-list2{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 90%;
+    animation: unforgeMuffs 1s linear 1 forwards,
+    volted 0.03s 1.3s linear alternate 4;
+}
+@keyframes unforgeMuffs {
+    0%{left: 109%;}
+    100% {left: 0;}
+    
+}
+.racing-muffler{
+    display: none;
+    top: 3rem;
+}
+.power-muffler{
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.twin-muffler{
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.stag-muffler{
+    display: none;
+    margin: 1rem 0 0 2.7rem;
+}
+
+/* Parts on right  */
+.spiked-wheel-f{
+    top: 15rem;
+    right: 0%;
+}
+.cruiser-wheel-f{
+    width: 43%;
+    top: 13rem;
+    right: 0;
+    margin-right: -5.4%;
+    transform-origin: 52.2% 55.9%;
+}
+.sport-wheel-f{
+    width: 46%;
+    top: 12.1rem;
+    margin-right: -4%;
+    right: 0%;
+    transform-origin: 52.2% 55.9%;
+}
+.touring-wheel-f{
+    width: 46%;
+    top: 12.7rem;
+    margin-right: -6%;
+    right: 0%;
+    transform-origin: 52.2% 55.9%;
+}
+.reverse-tyres2{
+    display: none;
+    position: absolute;
+    width: 55%;
+    z-index: -1;
+    animation:  rolling1 2.5s linear reverse infinite,
+    outRoll2 3s linear 1 forwards;
+    animation-play-state: running;
+}
+
+@keyframes outRoll2 {
+    0%{right: 146%; display: block;}
+    100% {right: 0%; display: none;}
+}
+@keyframes forge1FW {
+    0% {right: 0%;}
+    100% {right: 146%;}
+}
+
+/* Headlight Styling and animations */
+
+.head-MC{
+    display: none;
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    z-index: 0;
+    animation: forgeHead 1s linear 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+}
+@keyframes forgeHead {
+    0% {right: 0%;}
+    100% {right: 122.6%;}
+}
+.head-MC2{
+    display: none;
+    position: absolute;
+    top: -5rem;
+    width: 93%;
+    right: 0;
+    z-index: 0;
+    animation: forgeHead1 1s linear 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+}
+@keyframes forgeHead1 {
+    0% {right: 0%;}
+    100%{right: 120%;}
+}
+.head-MC3{
+    display: none;
+    position: absolute;
+    top: -6rem;
+    right: 0;
+    z-index: 0;
+    animation: forgeHead2 1s linear 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+}
+@keyframes forgeHead2{
+    0%{right: 0%;}
+    100%{right: 113%;}
+}
+.head-MC4{
+    display: none;
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    z-index: 0;
+    animation: forgeHead3 1s linear 1 forwards, 
+    volted 0.03s 3s linear alternate 4;
+}
+@keyframes forgeHead3 {
+    0% { right: 120%;}
+    100% {right: 0;}
+}
+.focus-head{
+    margin-right: -1rem;
+    display: none;
+    z-index: 3;
+}
+.broad-head{
+    display: none;
+    margin-top: -2rem;
+    margin-right:-1rem;
+    z-index:3;
+}
+.dual-head{
+    display: none;
+    margin-right: 12rem;
+    margin-top: 10rem;
+    width: 50%;
+    z-index:3;
+}
+
+/* Brake Disc Styling */
+.brake-list{
+    display: none;
+    position: absolute;
+    top: 17.7rem;
+    right: 0;
+    width: 23%;
+    z-index: 1;
+    animation: forgebrake 1s linear 1 forwards,
+    rolling1 1s linear infinite, 
+    volted 0.03s 3s linear alternate 4;
+}
+.brake-list2{
+    display: none;
+    position: absolute;
+    top: 17.7rem;
+    right: 0;
+    width: 23%;
+    z-index: 1;
+    animation: forgebrake 1s linear 1 forwards,
+    rolling1 1s linear reverse infinite, 
+    volted 0.03s 3s linear alternate 4;
+}
+@keyframes forgebrake {
+    0%{right: 0%;}
+    100% {right: 150.4%;}
+}
+.brake-wave{
+    display: none;
+}
+.brake-cross{
+    display: none;
+}
+.brake-drilled{
+    display: none;
+}
+.brake-expanded{
+    max-width: 95px;
+    display: none;
+    margin: 2rem 1rem 0 0;
+}
+
+/* Chasis and Color Selector */
+.typeSelector{
+  display: flex;
+  position: absolute;
+  top: 6%;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0;
+  height: 86%;
+  width: 20%;
+  background-color: #000;
+  border: 5px double #fff;
+  border-radius: 20px;
+  color: white;
+}
+.typeSelector label{
+  font: bold 1.4rem monospace;
+  margin: 1rem 0 -1rem 0;
+}
+.typeSelector input{
+  position: relative;
+  z-index: 90;
+  width: 63%;
+  margin: 0.6rem auto 1rem auto;
+  border-radius: 50%;
+}
+.typeSelector input:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 7px #00f;
+}
+.colorSelector{
+  display: flex;
+  position:absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 15%;
+  background-color: #000;
+  border: 5px double #fff;
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
+  z-index: 50;
+}
+.colorSelector label {
+    font: bold 1.4rem monospace;
+    margin: 1rem 0 1rem 2rem;
+}
+.colorSelector input{
+  position: relative;
+  z-index: 90;
+  width: 7%;
+  height: 6rem;
+  margin: 0 2rem 0 0.5rem;
+  border-radius: 50%;
+}
+.color-cyan{
+    background: url('image/cyanLogo.jpg') center / cover no-repeat;
+}
+.color-raven{
+    background: url('image/ravenLogo.jpg') center / cover no-repeat;
+}
+.color-crimson{
+    background: url('image/crimsonLogo.jpg') center / cover no-repeat;
+}
+.color-tranquil{
+    background: url('image/tranquilLogo.jpg') center / cover no-repeat;
+}
+.colorSelector input:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 7px #66FCF1;
+}
+.flash-colors, .creed-colors, .xforce-colors, .transcend-colors{
+    display: none;
+    position: absolute;
+    z-index: 90;
+    width: 40%;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.checkout-modal{
+    display: block;
+    width: 70%;
+    background-color: rgba(0,0,0,1);
+    box-shadow: 0 0 20px 16px #66FCF1;
+    margin: 0.3rem auto;
+    color: #66FCF1;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    border: 3px solid #fff;
+}
+.hiding{
+    position: absolute;
+    top: -80%;
+    opacity:0.2;
+    animation: fadeOut 2s linear 1 forwards;
+}
+@keyframes fadeIn{
+    0% {top: 64%; opacity: 0.9;}
+    25% {top: 50%; opacity: 0.8;}
+    50% {top: 10; opacity: 0.7;}
+    75% {top: 0.5%; opacity: 0.6;}
+    100% {top: -80%; opacity: 0.3;}
+}
+.showing{
+    position: absolute;
+    z-index: 50; 
+    left: 11%;
+    top: 10%;
+    animation: fadeIn 2s linear 1 forwards;
+}
+@keyframes fadeIn{
+    0% {top: -50%; opacity: 0.3;}
+    25% {top: -10%; opacity: 0.6;}
+    50% {top: 10; opacity: 0.7;}
+    75% {top: 50%; opacity: 0.8;}
+    100% {top: 50%; opacity: 1;}
+}
+
+#latest-models{
+    display: block;
+    position: relative;
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto 5rem auto;
+    overflow: hidden; 
+}
+
+
+#BOD{
+    display: inline-block;
+    margin: 5rem 1rem;
+    background: url('matrix2.gif') center / contain;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+#Register{
+    width: 30%;
+    float: right;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(80,10,100, 0.7);
+    margin: 3rem 5rem;
+    padding: 2rem 2rem;
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WHEEL FORGE!!!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="wficon.jpg" rel="icon">
+    <link href="wficon.jpg" rel="apple-touch-icon">
+</head>
+<body>
+    <header id="back">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <span class="navbar-brand" href="#">
+              <img src="logo.png" alt="logo" />
+            </object><span id="webname">WHEEL FORGE</span></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="d-flex justify-content-lg-between">
+                <li class="nav-item" >
+                  <a class="nav-link" style="color: #66FCF1; padding: 7px 13px;border-radius: 3px;
+                  text-transform: uppercase;" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #66FCF1; padding: 7px 13px;border-radius: 3px;
+                  text-transform: uppercase;" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" style="color: #66FCF1; padding: 7px 13px;border-radius: 3px;
+                  text-transform: uppercase;" href="#">Customize</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #66FCF1; padding: 7px 13px;border-radius: 3px;
+                    text-transform: uppercase;" href="../contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div id="slidingBG">
+      <div class="slide-show slide1">
+        <div class="slide-caption" onmouseover="stopSlide()" onmouseout="restartSlide()">
+          <h2>Board Of Directors</h2>
+          <p>Wheel Forge was Founded by these Amazing People!</p>
+        </div>  
+      </div>
+      <div class="slide-show slide2">
+        <div class="slide-caption" onmouseover="stopSlide()" onmouseout="restartSlide()">
+          <h2>Quality Above All</h2>
+        <p>We deliver our products with utmost quality by global standards</p>
+        </div>        
+      </div>
+      <div class="slide-show slide3">
+        <div class="slide-caption" onmouseover="stopSlide()" onmouseout="restartSlide()">
+          <h2>Get Exciting Freebies</h2>
+        <p>Upon Purchase of any products you can get some freebies that you can only get from Wheel Forge</p>
+        </div>        
+      </div>
+      <div class="slide-show slide4">
+        <div class="slide-caption" onmouseover="stopSlide()" onmouseout="restartSlide()">
+          <h2>Excellent Customer Service</h2>
+        <p>Our organization strives for excellence in every aspect of customer service</p>
+        </div>        
+      </div>
+      <div id="firstHead">
+        <object class="fH-logo" data="parts/wf_redblack-01.svg" type="image/svg+xml"></object>
+        <h1>Let's Forge!!</h1>
+        <a href="#Forge-container">Click here to Start Forging!</a>
+        <p>In this feature you can customize your dream motorcyle with a variety of accessories!!</p>
+
+        <div id="wheelcont"><object id="mainWheel" data="parts/redWheel.svg" type="image/svg+xml">
+        </object></div>
+        <div id="see-latest">
+          <p>Don't have time to customize? </p>
+          <a href="#latest-models">See Latest Models here</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="customize">
+        <h3>Forge Flow</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <input id="start-btn" class="btn btn-info hoverEff" onclick="startUp()" type="button" value="Name Your Motorcycle">
+            </li>
+            <li class="nav-item">
+              <input id="chasis-btn" class="btn btn-info hoverEff" onclick="chasisPress()" type="button" disabled value="Chasis">
+            </li>
+            <li class="nav-item">
+              <input id="tyres-btn" class="btn btn-info hoverEff" onclick="tyresPress()" type="button" disabled value="Tyres">
+            </li>
+            <li class="nav-item">
+              <input id="handle-btn" class="btn btn-info hoverEff" onclick="handlePress()" type="button" disabled value="Handle Bars">
+            </li>
+            <li class="nav-item">
+              <input id="head-btn" class="btn btn-info hoverEff" onclick="headPress()" type="button" disabled value="Headlights">
+            </li>
+            <li class="nav-item">
+              <input id="muffler-btn" class="btn btn-info hoverEff" onclick="mufflerPress()" type="button" disabled value="Muffler">
+            </li>
+            <li class="nav-item">
+              <input id="brake-btn" class="btn btn-info hoverEff" onclick="brakePress()" type="button" disabled value="Brake Disc">
+            </li>
+            <li class="nav-item">
+              <input id="check-btn" class="btn btn-success hoverEff" onclick="checkPress()" type="button" disabled value="Check Out!">
+            </li>
+            <li class="nav-item">
+              <input id="restart-btn" class="btn btn-danger hoverEff" onclick="restartPress()" type="button" disabled value="Wanna Restart?">
+            </li>
+          </ul>
+    </div>
+    
+    <div id="Forge-container" class="Builder">
+      <div id="forge-greet" hidden>Great Name! let's build<span class="motorsName"></span></div>
+      <div id="forge-success" class="forge-in">
+        <h4>FORGE ORDER RECEIVED!</h4>
+        <h5>Thank you for choosing Wheel Forge! We will notify once your forged motorcycle is ready</h5>
+        <p>See the choices you made below, for more information you may reach out to us and we will be more than happy to assist you </p>
+        <ul id="success-spec">
+          <h4>Forged-order Specifications</h4>
+          <li>Motor Name: <span class="forged-name"></span> </li>
+          <li>Chasis type: <span class="forged-chasisT"></span></li>
+          <li>Chasis Color: <span class="forged-chasisC"></span></li>
+          <li>Tyres type: <span class="forged-tyresT"></span></li>
+          <li>Tyres Color: <span class="forged-tyresC"></span></li>
+          <li>Handlebars type: <span class="forged-handleT"></span></li>
+          <li>Handle Color: <span class="forged-handleC"></span></li>
+          <li>Headlight type: <span class="forged-headT"></span></li>
+          <li>Headlight Color: <span class="forged-headC"></span></li>
+          <li>Muffler type: <span class="forged-muffsT"></span></li>
+          <li>Muffler Color: <span class="forged-muffsC"></span></li>
+          <li>Brake Disc type: <span class="forged-brakeT"></span></li>
+          <li>Brake Disc Color: <span class="forged-brakeC"></span></li>
+        </ul>
+        <p>One of our Technical Experts will reach out to you further discuss the specification of your Dream Motorcycle.</p>
+      </div>
+      <div class="forge-end" hidden>
+        <img src="image/bow.png" alt="" width="65px">
+        <h3>Thank you for trusting us, rest-assured that your motorcycle is built with the utmost quality and tip top condiion </h3>
+        <input class="btn btn-danger" type="button" name="close" value="CLOSE" onclick="closeCheck()">
+      </div>
+
+      <div class="checked-out" hidden>
+        <h2> <span width="65px">&#128147</span> Thank you for taking the time to build with us!!! </h2>
+      </div>
+      <div id="chasisType" class="typeSelector" hidden>
+        <h4>Chasis Type</h4>
+          <label for="Flash">Flash</label>
+          <input id="flashSelect" type="image" name="cyan" src="https://vectr.com/fullmetal045/a9JJqArEJ.svg?width=640&height=640&select=a9JJqArEJpage0" onclick="reinforce1(); return false;" value="+">
+          <label for="creed">Creed</label>
+          <input id="creedSelect" type="image" name="creed" src="https://vectr.com/fullmetal045/a1FzyxWsIH.svg?width=640&height=640&select=a1FzyxWsIHpage0" onclick="reinforce2(); return false;" value="+">
+          <label for="x-force">X-Force</label>
+          <input id="xforceSelect" type="image" name="x-force" src="https://vectr.com/fullmetal045/b1R1EU5dxc.svg?width=640&height=640&select=b1R1EU5dxcpage0" onclick="reinforce3(); return false;" value="+">
+          <label for="transcend">Transcend</label>
+          <input id="transcendSelect" type="image" name="transcend" src="https://vectr.com/fullmetal045/h4BDHJhlec.svg?width=640&height=640&select=h4BDHJhlecpage0" onclick="reinforce4(); return false;" value="+">
+      </div>
+      <div id="tyres-type" class="typeSelector" hidden>
+        <h4>Tyres Type</h4>
+          <label for="spiked">Spiked</label>
+          <input id="spikedSelect" type="image" name="spiked" src="parts/spikedWheel.png" onclick="reinTyres(); return false;" value="+">
+          <label for="cruiser">Cruiser</label>
+          <input id="cruiserSelect" type="image" name="cruiser" src="https://vectr.com/fullmetal045/h4NE56HMW3.svg?width=640&height=640&select=h4NE56HMW3page0" onclick="reinTyres1(); return false;" value="+">
+          <label for="sport">Sport</label>
+          <input id="sportSelect" type="image" name="sport" src="https://vectr.com/fullmetal045/a6CvgP0sw0.svg?width=640&height=640&select=a6CvgP0sw0page0" onclick="reinTyres2(); return false;" value="+">
+          <label for="touring">Touring</label>
+          <input id="touringSelect" type="image" name="touring" src="https://vectr.com/fullmetal045/csMGb0bNU.svg?width=640&height=640&select=csMGb0bNUpage0" onclick="reinTyres3(); return false;" value="+">
+      </div>
+      <div id="handle-type" class="typeSelector" hidden>
+        <h4>Handle Bar Type</h4>
+          <label for="high">Forward</label>
+          <input id="highSelect" type="image" name="high" src="https://vectr.com/fullmetal045/c3m2ox6vS0.svg?width=640&height=640&select=c3m2ox6vS0page0" onclick="reinHandle(); return false;" value="+">
+          <label for="curved">Curved</label>
+          <input id="curvedSelect" type="image" name="curved" src="https://vectr.com/fullmetal045/aFAC4D5Un.svg?width=640&height=640&select=aFAC4D5Unpage0" onclick="reinHandle1(); return false;" value="+">
+          <label for="straight">Straight</label>
+          <input id="straightSelect" type="image" name="straight" src="https://vectr.com/fullmetal045/b1YsTxfZFh.svg?width=640&height=640&select=b1YsTxfZFhpage0" onclick="reinHandle2(); return false;" value="+">
+      </div>
+       <div id="head-type" class="typeSelector" hidden>
+        <h4>Headlight Type</h4>
+          <label for="focus">Focus</label>
+          <input id="focusSelect" type="image" name="focus" src="https://vectr.com/fullmetal045/b4ErjQ2pJM.svg?width=640&height=640&select=b4ErjQ2pJMpage0" onclick="reinHead(); return false;" value="+">
+          <label for="dual">Dual</label>
+          <input id="dualSelect" type="image" name="dual" src="https://vectr.com/fullmetal045/e1yH6jyeHM.svg?width=640&height=640&select=e1yH6jyeHMpage0" onclick="reinHead1(); return false;" value="+">
+          <label for="broad">Broad</label>
+          <input id="broadSelect" type="image" name="broad" src="https://vectr.com/fullmetal045/goLFZRi2v.svg?width=640&height=640&select=goLFZRi2vpage0" onclick="reinHead2(); return false;" value="+">
+      </div>
+      <div id="muffler-type" class="typeSelector" hidden>
+        <h4>Muffler Type</h4>
+          <label for="racing">Racing</label>
+          <input id="racingSelect" type="image" name="racing" src="https://vectr.com/fullmetal045/a2YwgtB4wZ.svg?width=640&height=640&select=a2YwgtB4wZpage0" onclick="reinMuffler(); return false;" value="+">
+          <label for="power">Powercore</label>
+          <input id="powerSelect" type="image" name="power" src="https://vectr.com/fullmetal045/beAapQ1PR.svg?width=640&height=640&select=beAapQ1PRpage0" onclick="reinMuffler1(); return false;" value="+">
+          <label for="twin">Twin Slash</label>
+          <input id="twinSelect" type="image" name="twin" src="https://vectr.com/fullmetal045/a2gC5xk0Dw.svg?width=640&height=640&select=a2gC5xk0Dwpage0" onclick="reinMuffler2(); return false;" value="+">
+          <label for="staggered">Staggered</label>
+          <input id="staggeredSelect" type="image" name="staggered" src="https://vectr.com/fullmetal045/a5huqVuErx.svg?width=640&height=640&select=a5huqVuErxpage0" onclick="reinMuffler3(); return false;" value="+">
+      </div>
+      <div id="brake-type" class="typeSelector" hidden>
+        <h4>Brake Disc Type</h4>
+          <label for="wave">Wave Rotor</label>
+          <input id="waveSelect" type="image" name="wave" src="parts/brakeWave.png" onclick="reinBrake(); return false;" value="+">
+          <label for="cross">Cross Slotted</label>
+          <input id="crossSelect" type="image" name="cross" src="parts/brakeCross.png" onclick="reinBrake1(); return false;" value="+">
+          <label for="drilled">Drilled Rotor</label>
+          <input id="drilledSelect" type="image" name="drilled" src="parts/brakeDrilled.png" onclick="reinBrake2(); return false;" value="+">
+          <label for="mag">Mag expanded</label>
+          <input id="magSelect" type="image" name="mag" src="parts/brakeMag.png" onclick="reinBrake3(); return false;" value="+">
+      </div>
+
+      <div id="dmContainer" hidden>
+        <div id="nameMotor" class="modalPop" hidden>
+          <h3>Name your Motorcycle!</h3>
+          <input id="inputName" type="text" placeholder="Enter Name here">
+          <input id="entered-name" class="btn btn-danger" type="submit" value="ENTER" onclick="named()">
+          <p>Let's start by naming your dream motorcycle</p>
+        </div>
+        
+        <div id="chasis-modal" class="modalPop" hidden>
+          <h3>Chasis</h3>
+          <p>Select Type first then choose a color below :)</p>
+          <input id="doneChasis" class="btn btn-primary" type="submit" disabled value="DONE" onclick="chasisDone()">
+        </div>
+        <div id="tyres-modal" class="modalPop" hidden>
+          <h3>Tyres <span class="motorsName"></span> </h3>
+          <p>Select Type first then choose a color below :)</p>
+          <input id="done-tyres" class="btn btn-primary" type="submit" value="DONE" onclick="tyresDone()">
+        </div>
+        <div id="handle-modal" class="modalPop" hidden>
+          <h3>Handle Bar <span class="motorsName"></span> </h3>
+          <p>Select Type first then choose a color below :)</p>
+          <input id="done-handle" class="btn btn-primary" type="submit" value="DONE" onclick="handleDone()">
+        </div>
+        <div id="head-modal" class="modalPop" hidden>
+          <h3>Headlights <span class="motorsName"></span> </h3>
+          <p>Select Type first then choose a color below :)</p>
+          <input id="done-head" class="btn btn-primary" type="submit" value="DONE" onclick="headDone()">
+        </div>
+        <div id="muffler-modal" class="modalPop" hidden>
+          <h3>Mufflers <span class="motorsName"></span> </h3>
+          <p>Select Type first then choose a color below :)</p>
+          <input id="done-muffler" class="btn btn-primary" type="submit" value="DONE" onclick="mufflerDone()">
+        </div>
+        <div id="brake-modal" class="modalPop">
+          <h3>Brake Disc <span class="motorsName"></span> </h3>
+          <p>Select Type first then choose a color below :)</p>
+          <input id="done-brake" class="btn btn-primary" type="submit" value="DONE" onclick="brakeDone()">
+        </div>
+        <div class="checkout-modal hiding">
+          <h3><span id="check-emoji" style="font-size: 30px;">&#128525;</span><span id="motors-name"></span> looks AMAZING!!</h3>
+          <h4>You're very Talented at customizing</h4>
+          <p>Press Check out to get your dream motorcycle</p>
+          <input id="check-out" class="btn btn-success" type="submit" value="ORDER NOW!" onclick="checkDone(); return false;" value="+">
+          <p>want some changes? go back on the Forge flow on the left side of your screen or press restart to remove all customized parts and start again</p>
+        </div>
+        
+        <div class="driveway">
+          <section class="motorcycle">
+          <ul class="parts_list">
+             <li class="parts_item"><object id="motorSkeleton" data="parts/motorSkeleton (1).svg" type="image/svg+xml"><img src="" alt=""></object></li>
+             <li class="parts_item"><object id="frontW" data="parts/motorWheel.svg" type="image/svg+xml"><img src="" alt=""></object></li>
+             <li class="parts_item"><object id="rearW" data="parts/motorWheel.svg" type="image/svg+xml"><img src="" alt=""></object></li>
+             <li class="parts_item"><object id="engine" data="parts/engine.svg" type="image/svg+xml"><img src="" alt=""></object></li>
+          </ul>
+          </section>
+          <div class="parts-on-left">
+            <object class="flash-chasis-r" data="parts/flashRear.svg" type="image/svg+xml"></object>
+            <object class="creed-chasis-r" data="parts/creedRear.svg" type="image/svg+xml"></object>
+            <object class="xforce-chasis-r" data="parts/xforceRear.svg" type="image/svg+xml"></object>
+            <object class="transcend-chasis-r" data="parts/transcendRear.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-l spiked-wheel-r" data="parts/spikedWheel.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-l cruiser-wheel-r" data="parts/cruiserWheel.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-l sport-wheel-r" data="parts/sportWheel.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-l touring-wheel-r" data="parts/touringWheel.svg" type="image/svg+xml"></object>
+              <object class="handle-MC highHandle" data="parts/forwardHandle.svg" type="image/svg+xml"></object>
+              <object class="handle-MC curvedHandle" data="parts/curvedDefault.svg" type="image/svg+xml"></object>
+              <object class="handle-MC straightHandle" data="parts/handlebars.svg" type="image/svg+xml"></object>
+              <object class="muffler-list racing-muffler" data="parts/racingMuffler.svg" type="image/svg+xml"></object>
+              <object class="muffler-list power-muffler" data="parts/powerMuffler.svg" type="image/svg+xml"></object>
+              <object class="muffler-list twin-muffler" data="parts/twinMuffler.svg" type="image/svg+xml"></object>
+              <object class="muffler-list stag-muffler" data="parts/stagMuffler.svg" type="image/svg+xml"></object>
+
+          </div>
+          <div class="parts-on-right">
+            <object class="flash-chasis-f" data="parts/flashFrontDefault1.svg" type="image/svg+xml"></object>
+            <object class="creed-chasis-f" data="parts/creedFront.svg" type="image/svg+xml"></object>
+            <object class="xforce-chasis-f" data="parts/xforceFront.svg" type="image/svg+xml"></object>
+            <object class="transcend-chasis-f" data="parts/transcendFront.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-r spiked-wheel-f" data="parts/spikedWheel.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-r cruiser-wheel-f" data="parts/cruiserWheel.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-r sport-wheel-f" data="parts/sportWheel.svg" type="image/svg+xml"></object>
+              <object class="tyre-list-r touring-wheel-f" data="parts/touringWheel.svg" type="image/svg+xml"></object>
+              <object class="head-MC focus-head" data="https://vectr.com/fullmetal045/b4ErjQ2pJM.svg?width=640&height=640&select=b4ErjQ2pJMpage0" type="image/svg+xml"></object>
+              <object class="head-MC broad-head" data="parts/broadHead.svg" type="image/svg+xml"></object>
+              <object class="head-MC dual-head" data="parts/dualHead.svg" type="image/svg+xml"></object>
+              <img class="brake-list brake-wave" src="parts/brakeWave.png" alt="Wave Rotor">
+              <img class="brake-list brake-cross" src="parts/brakeCross.png" alt="Cross Brake">
+              <img class="brake-list brake-drilled" src="parts/brakeDrilled.png" alt="Drilled Rotor">
+              <img class="brake-list brake-expanded" src="parts/brakeMag.png" alt="Mag expanded">
+            </div>
+        </div>
+        
+      </div>
+      <div id="color-chasis" class="colorSelector" hidden>
+        <h4>Color <span class="selected-type"></span></h4>
+        <label for="cyan">Cyan</label>
+        <input id="cyanFlash" class="flash-colors" type="image" name="cyan" src="image/cyanLogo.jpg" onclick="cyanFC(); return false;" value="+">
+        <input id="cyanCreed" class="creed-colors" type="image" name="cyan" src="image/cyanLogo.jpg" onclick="cyanCC(); return false;" value="+">
+        <input id="cyanXforce" class="xforce-colors" type="image" name="cyan" src="image/cyanLogo.jpg" onclick="cyanXC(); return false;" value="+">
+        <input id="cyanTranscend" class="transcend-colors" type="image" name="cyan" src="image/cyanLogo.jpg" onclick="cyanTC(); return false;" value="+">
+        <label for="Raven">Raven</label>
+        <input id="ravenFlash" class="flash-colors" type="image" name="Raven" src="image/ravenLogo.jpg" onclick="ravenFC(); return false;" value="+">
+        <input id="ravenCreed" class="creed-colors" type="image" name="Raven" src="image/ravenLogo.jpg" onclick="ravenCC(); return false;" value="+">
+        <input id="ravenXforce" class="xforce-colors" type="image" name="Raven" src="image/ravenLogo.jpg" onclick="ravenXC(); return false;" value="+">
+        <input id="ravenTranscend" class="transcend-colors" type="image" name="Raven" src="image/ravenLogo.jpg" onclick="ravenTC(); return false;" value="+">
+        <label for="Crimson">Crimson</label>
+        <input id="crimsonFlash" class="flash-colors" type="image" name="Crimson" src="image/crimsonLogo.jpg" onclick="crimsonFC(); return false;" value="+">
+        <input id="crimsonCreed" class="creed-colors" type="image" name="Crimson" src="image/crimsonLogo.jpg" onclick="crimsonCC(); return false;" value="+">
+        <input id="crimsonXforce" class="xforce-colors" type="image" name="Crimson" src="image/crimsonLogo.jpg"onclick="crimsonXC(); return false;" value="+">
+        <input id="crimsonTranscend" class="transcend-colors" type="image" name="Crimson" src="image/crimsonLogo.jpg" onclick="crimsonTC(); return false;" value="+">
+        <label for="Tranquil">Tranquil</label>
+        <input id="tranquilFlash" class="flash-colors" type="image" name="Tranquil" src="image/tranquilLogo.jpg" onclick="tranquilFC(); return false;" value="+">
+        <input id="tranquilCreed" class="creed-colors" type="image" name="Tranquil" src="image/tranquilLogo.jpg" onclick="tranquilCC(); return false;" value="+">
+        <input id="tranquilXforce" class="xforce-colors" type="image" name="Tranquil" src="image/tranquilLogo.jpg" onclick="tranquilXC(); return false;" value="+">
+        <input id="tranquilTranscend" class="transcend-colors" type="image" name="Tranquil" src="image/tranquilLogo.jpg" onclick="tranquilTC(); return false;" value="+">
+      </div>
+      <div id="color-tyres" class="colorSelector" hidden>
+        <h3>Color <span class="selected-type"></span></h3>
+        <label for="cyan">Cyan</label>
+        <input class="color-cyan cyan-tyres" type="button" name="cyan" src="#" onclick="cyanTyres()">
+        <label for="Raven">Raven</label>
+        <input class="color-raven raven-tyres" type="button" name="Raven" src="#" onclick="ravenTyres()">
+        <label for="Crimson">Crimson</label>
+        <input class="color-crimson crimson-tyres" type="button" name="Crimson" src="#" onclick="crimsonTyres()">
+        <label for="Tranquil">Tranquil</label>
+        <input class="color-tranquil tranquil-tyres" type="button" name="Tranquil" src="#" onclick="tranquilTyres()">
+      </div>
+      <div id="color-handle" class="colorSelector" hidden>
+        <h3>Color <span class="selected-type"></span></h3>
+        <label for="cyan">Cyan</label>
+        <input class="color-cyan cyan-handle" type="button" name="cyan" src="#" onclick="cyanHandle()">
+        <label for="Raven">Raven</label>
+        <input class="color-raven raven-handle" type="button" name="Raven" src="#" onclick="ravenHandle()">
+        <label for="Crimson">Crimson</label>
+        <input class="color-crimson crimson-handle" type="button" name="Crimson" src="#" onclick="crimsonHandle()">
+        <label for="Tranquil">Tranquil</label>
+        <input class="color-tranquil tranquil-handle" type="button" name="Tranquil" src="#" onclick="tranquilHandle()">
+      </div>
+      <div id="color-head" class="colorSelector" hidden>
+        <h3>Color <span class="selected-type"></span></h3>
+        <label for="cyan">Cyan</label>
+        <input class="color-cyan cyan-head" type="button" name="cyan" src="#" onclick="cyanHead()">
+        <label for="Raven">Raven</label>
+        <input class="color-raven raven-head" type="button" name="Raven" src="#" onclick="ravenHead()">
+        <label for="Crimson">Crimson</label>
+        <input class="color-crimson crimson-head" type="button" name="Crimson" src="#" onclick="crimsonHead()">
+        <label for="Tranquil">Tranquil</label>
+        <input class="color-tranquil tranquil-head" type="button" name="Tranquil" src="#" onclick="tranquilHead()">
+      </div>
+      <div id="color-muffler" class="colorSelector" hidden>
+        <h3>Color <span class="selected-type"></span></h3>
+        <label for="cyan">Cyan</label>
+        <input class="color-cyan cyan-muffler" type="button" name="cyan" src="#" onclick="cyanMuffs()">
+        <label for="Raven">Raven</label>
+        <input class="color-raven raven-muffler" type="button" name="Raven" src="#" onclick="ravenMuffs()">
+        <label for="Crimson">Crimson</label>
+        <input class="color-crimson crimson-muffler" type="button" name="Crimson" src="#" onclick="crimsonMuffs()">
+        <label for="Tranquil">Tranquil</label>
+        <input class="color-tranquil tranquil-muffler" type="button" name="Tranquil" src="#" onclick="tranquilMuffs()">
+      </div>
+      <div id="color-brake" class="colorSelector" hidden>
+        <h3>Color <span class="selected-type"></span></h3>
+        <label for="cyan">Cyan</label>
+        <input class="color-cyan cyan-brake" type="button" name="cyan" src="#" onclick="cyanBrake()">
+        <label for="Raven">Raven</label>
+        <input class="color-raven raven-brake" type="button" name="Raven" src="#" onclick="ravenBrake()">
+        <label for="Crimson">Crimson</label>
+        <input class="color-crimson crimson-brake" type="button" name="Crimson" src="#" onclick="crimsonBrake()">
+        <label for="Tranquil">Tranquil</label>
+        <input class="color-tranquil tranquil-brake" type="button" name="Tranquil" src="#" onclick="tranquilBrake()">
+      </div>
+    </div>
+    
+    <hr>
+    <div id="models-cont"><iframe id="latest-models" src="image/sliding.html" frameborder="0"></iframe></div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src='script.js'></script>
+</body>
+</html>

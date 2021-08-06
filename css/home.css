@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: montserrat;
+  overflow-x: hidden;
+}
+
+object {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Style the button used to pause/play the video */
+
+/* Changes I made - Arwin Espiritu :) */
+#Main-container{
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+
+.qoute1{
+    display:block;
+    position: absolute;
+    width: 50%;
+    margin: 0;
+    padding:0;
+    right: 1.5%;
+    bottom: 20%;
+    text-align: right;
+}
+
+.qoute1 h3{
+  color: #66fcf1;
+  font: bold 2rem monospace;
+}
+.qoute1 p{
+  color: #fff;
+  font: 1.1rem monospace;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.wheel{
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 20rem;
+    bottom: 1rem;
+    left: 1%;
+    margin: 0 0 1rem 0.5rem;
+    font: 3rem monospace;
+    color: white;
+}
+.wheel p{
+  display: block;
+  position: absolute;
+  left: 22%;
+  bottom: 0;
+  opacity: 0.4
+}
+.cycle{
+  display: block;
+  position: absolute;
+  top: 0; 
+  opacity: 0.4;
+  left: 14%;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+}
+.cycle:hover{
+  opacity: 1;
+  width: 73%;
+}

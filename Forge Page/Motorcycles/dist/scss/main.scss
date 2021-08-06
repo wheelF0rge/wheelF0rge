@@ -1,0 +1,533 @@
+$base : #000000;
+$white  : #ffffff;
+$gray  : #dedede;
+$gray-dark  : darken($gray, 50%);
+$gray-darker  : darken($gray, 75%);
+$gray-light  : lighten($gray, 10%);
+$blue-light  : #add8e6;
+$green  : #48bc3b ;
+$green-dark  : darken($green, 8%);
+$green-light  : lighten($green, 40%);
+$yellow  : #ffdb00;
+$yellow-dark  : darken($yellow, 8%);
+$yellow-light  : lighten($yellow, 40%);
+$red  : #c30000;
+$red-dark  : darken($red, 8%);
+$red-light  : lighten($red, 40%);
+
+@mixin breakpoint($class) {
+  
+  @if $class == mobile {
+    @media (max-width: 550px) { @content; }
+  }
+  
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+.h-mobile {
+  @include breakpoint(mobile) {
+    display:none;
+  }
+}
+
+
+body {
+  color:$base;
+  margin:0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+.driveway {
+  background:$blue-light;
+  overflow: hidden;
+  position:relative;
+  border-bottom:1px solid $gray-dark;
+  height:400px;
+}
+
+.workbench {
+  background:$gray-darker;
+}
+
+.workbench_list {
+  margin:0;
+  padding:10px 20px;
+  list-style:none;
+}
+
+.workbench_item {
+  padding:0 5px 0 0;
+  display:inline-block;
+  vertical-align:middle;
+  @include breakpoint(md) {
+    padding:0 15px 0 0;
+  }
+}
+
+.workbench_item-title {
+  display:block;
+  @include breakpoint(md) {
+    display:inline-block;
+  }
+}
+
+.workbench_head {
+  color:$gray-light;
+  font-weight:100;
+  /* max-width:200px; */
+  max-width:auto;
+  width:auto;
+  letter-spacing:0.07em;
+  display:inline-block;
+  vertical-align:middle;
+  font-size:20px;
+  @include breakpoint(mobile) {
+    width:165px;
+    font-size:16px;
+  }
+  @include breakpoint(sm) {
+    width:280px;
+    font-size:24px;
+  }
+}
+
+.motorcycle-thumbnail {
+  width:100px;
+  vertical-align:middle;
+  @include breakpoint(sm) {
+    width:130px;
+  }
+}
+
+.btn_tool {
+  color:$base;
+  
+  padding:18px 25px;
+  background:$yellow-dark;
+  outline:none;
+  border:1px solid $yellow-dark;
+  border-radius:2px;
+  font-size:15px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight:400;
+  line-height:1em;
+  @include breakpoint(mobile) {
+    padding:10px 8px;
+  }
+  &:hover {
+    cursor:pointer;
+    background:$green;
+    border-color:$green-dark;
+  }
+  &.is-active {
+    background:$green;
+    border-color:$green-dark;
+    &:hover {
+      color:$white;
+      background:$red;
+      border-color:$red-dark;
+    }
+  }
+  &:disabled {
+    opacity:0.5;
+    background:$gray-light;
+    border-color:$gray-darker;
+    color:$gray-dark;
+    &:hover {
+      cursor:not-allowed;
+    }
+  }
+}
+
+@keyframes spinning {
+    from   {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes shaking {
+    0%   {
+      transform: rotate(0deg);
+    }
+    30%  {
+      transform: rotate(3deg);
+    }
+    60%  {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-4deg);
+    }
+}
+
+@keyframes wheelie {
+    0%   {
+      transform: rotate(0deg);
+    }
+    10%   {
+      transform: rotate(0deg);
+    }
+    15%  {
+      transform: rotate(-10deg);
+    }
+    20%  {
+      transform: rotate(-10deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+.motorcycle {
+  transform:scale(0.75,0.75);
+  transform-origin:top;
+  @include breakpoint(sm) {
+    transform:scale(1,1);
+    position:relative;
+    width:70%;
+  }
+}
+
+.parts_list {
+  display:block;
+  list-style:none;
+  padding:0;
+  width:100%;
+  .is-built & {
+    position:relative;
+    margin:30px auto 0 auto;
+    width:345px;
+    height:190px;
+    @include breakpoint(sm) {
+      margin-top:90px;
+    }
+  }
+  .is-built.is-throttled & {
+      animation:wheelie 8s linear infinite;
+      transform-origin:65px 182px;
+  }
+}
+
+.parts_item {
+  transition:left 0.5s, top 0.5s;
+  position:absolute; 
+  img {
+    width:100%;
+  }
+}
+
+.part {
+  &.is-highlighted {
+    opacity:0.5;
+  }
+}
+
+.part-engine {
+  top:80px;
+  left:5%;
+  width:60px;
+  z-index:1;
+  .is-built & {
+    top:84px;
+    left:127px;
+  }
+  .is-built.is-started & {
+    animation:shaking 0.12s linear infinite;
+  }
+}
+
+.part-exhaust-pipe {
+  top:70px;
+  left:10%;
+  width:165px;
+  z-index:2;
+  .is-built & {
+    top:61px;
+    left:37px;
+  }
+}
+
+.part-fender-front {
+  top:150px;
+  left:15%;
+  width:92px;
+  z-index:3;
+  .is-built & {
+    top:55px;
+    left:212px;
+  }
+}
+
+.part-fender-rear {
+  top:130px;
+  left:30%;
+  width:64px;
+  .is-built & {
+    top:58px;
+    left:30px;
+  }
+}
+
+.part-fork {
+  top:0;
+  left:25%;
+  width:88px;
+  z-index:5;
+  .is-built & {
+    top:18px;
+    left:205px;
+  }
+}
+
+.part-frame-background {
+  top:84px;
+  left:37%;
+  width:115px;
+  z-index:0;
+  .is-built & {
+    top:65px;
+    left:100px;
+  }
+}
+
+.part-frame-foreground {
+  top:65px;
+  left:35%;
+  width:160px;
+  z-index:4;
+  .is-built & {
+    top:35px;
+    left:75px;
+  }
+}
+
+.part-gas-tank {
+  top:20px;
+  left:38%;
+  width:78px;
+  z-index:6;
+  .is-built & {
+    top:38px;
+    left:144px;
+  }
+}
+
+.part-handelbars {
+  top:160px;
+  left:85%;
+  width:45px;
+  z-index:7;
+  .is-built & {
+    top:5px;
+    left:190px;
+  }
+}
+
+.part-number-plate {
+  top:150px;
+  left:64%;
+  width:40px;
+  z-index:8;
+  .is-built & {
+    top:90px;
+    left:85px;
+  }
+}
+
+.part-seat {
+  top:70px;
+  left:65%;
+  width:95px;
+  z-index:4;
+  .is-built & {
+    top:40px;
+    left:56px;
+  }
+}
+
+.part-shock-rear {
+  top:40px;
+  left:90%;
+  width:28px;
+  z-index:5;
+  .is-built & {
+    top:64px;
+    left:63px;
+  }
+}
+
+.part-swing-arm {
+  top:40px;
+  left:80%;
+  width:70px;
+  z-index:4;
+  .is-built & {
+    top:116px;
+    left:50px;
+  }
+}
+
+.part-front-wheel {
+  top:130px;
+  left:70%;
+  width:96px;
+  z-index:2;
+  .is-built & {
+    top:85px;
+    left:235px;
+  }
+  .is-built.is-throttled & {
+    animation:spinning 1.75s linear infinite;
+    transform-origin:48px 48px;
+  }
+}
+
+.part-rear-wheel {
+  top:0;
+  left:55%;
+  width:96px;
+  z-index:2;
+  .is-built & {
+    top:85px;
+    left:18px;
+  }
+  .is-built.is-throttled & {
+    animation:spinning 1.75s linear infinite;
+    transform-origin:48px 48px;
+  }
+}
+
+.part-shadow {
+  opacity:0;
+  .is-built & {
+    opacity:1;
+    width:300px;
+    top:172px;
+    left:calc(50% - 150px);
+  }
+}
+
+.parts_table_container {
+  @include breakpoint(sm) {
+    border-top:1px solid $gray-dark;
+    width:30%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    border-left:1px solid $gray-darker;
+  }
+}
+
+.parts_table_head {
+  background:$gray-darker;
+  color:$white;
+  font-weight:200;
+  margin:0 auto;
+  font-size:18px;
+  letter-spacing:0.07em;
+  padding:15px;
+  box-sizing: border-box;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:150px;
+  @include breakpoint(sm) {
+    bottom:auto;
+    top:0;
+    z-index:2;
+    height:52px;
+  }
+}
+
+.parts_table_wrapper {
+  overflow-y:scroll;
+  height:150px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  left:0;
+  @include breakpoint(sm) {
+    position:absolute;
+    top:0;
+    height:auto;
+  }
+}
+
+.parts_table {
+  display:table;
+  width:100%;
+  margin:0 auto;
+  border-bottom:none;
+  @include breakpoint(sm) {
+    margin-top:52px;
+  }
+}
+
+.parts_table_row {
+  display:table-row;
+  background:$gray-light;
+  &:hover {
+    opacity:0.75;
+    cursor:pointer;
+    .parts_table_id:before {
+      background:$green;
+    }
+  }
+}
+
+.parts_table_cell {
+  display:table-cell;
+  vertical-align:middle;
+  padding:10px 2px;
+  border-bottom:1px solid $gray;
+}
+
+.parts_table_thumbnail {
+  width:20px;
+  color:$gray-dark;
+}
+
+.parts_table_image {
+  max-width:100%;
+  max-height:22px;
+}
+
+.parts_table_id {
+  width:20px;
+  padding-left:20px;
+  position:relative;
+  &:before {
+    content:'';
+    background: $yellow;
+    position:absolute;
+    width:8px;
+    left:0;
+    top:0;
+    bottom:0;
+  }
+}
