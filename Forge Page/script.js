@@ -742,28 +742,28 @@ let cyanTyres = () => {
     reinTyres1();
     cruiserWheelR.removeAttribute('data');
     setTimeout(()=>{
-      cruiserWheelR.setAttribute('data', 'parts/cycruiserWheel.svg');}, 10);
+      cruiserWheelR.setAttribute('data', 'parts/cycruiserWheel.svg');}, 55);
     cruiserWheelF.removeAttribute('data');
     setTimeout(()=>{
-      cruiserWheelF.setAttribute('data', 'parts/cycruiserWheel.svg');}, 15);
+      cruiserWheelF.setAttribute('data', 'parts/cycruiserWheel.svg');}, 65);
   }
   else if(tyreSport==true){
     reinTyres2();
     sportWheelR.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelR.setAttribute('data', 'parts/cysportWheel.svg');}, 10);
+      sportWheelR.setAttribute('data', 'parts/cysportWheel.svg');}, 55);
     sportWheelF.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelF.setAttribute('data', 'parts/cysportWheel.svg');}, 15);
+      sportWheelF.setAttribute('data', 'parts/cysportWheel.svg');}, 65);
   }
   else if(tyreTouring==true){
     reinTyres3();
     touringWheelR.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelR.setAttribute('data', 'parts/cytouringWheel.svg');}, 10);
+      touringWheelR.setAttribute('data', 'parts/cytouringWheel.svg');}, 55);
     touringWheelF.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelF.setAttribute('data', 'parts/cytouringWheel.svg');}, 15);
+      touringWheelF.setAttribute('data', 'parts/cytouringWheel.svg');}, 65);
   }
 }
 let ravenTyres = () => {
@@ -781,28 +781,28 @@ let ravenTyres = () => {
     reinTyres1();
     cruiserWheelR.removeAttribute('data');
     setTimeout(()=>{
-      cruiserWheelR.setAttribute('data', 'parts/rcruiserWheel.svg');}, 10);
+      cruiserWheelR.setAttribute('data', 'parts/rcruiserWheel.svg');}, 55);
     cruiserWheelF.removeAttribute('data');
     setTimeout(()=>{
-      cruiserWheelF.setAttribute('data', 'parts/rcruiserWheel.svg');}, 15);
+      cruiserWheelF.setAttribute('data', 'parts/rcruiserWheel.svg');}, 65);
   }
   else if(tyreSport==true){
     reinTyres2();
     sportWheelR.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelR.setAttribute('data', 'parts/rsportWheel.svg');}, 10);
+      sportWheelR.setAttribute('data', 'parts/rsportWheel.svg');}, 55);
     sportWheelF.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelF.setAttribute('data', 'parts/rsportWheel.svg');}, 15);
+      sportWheelF.setAttribute('data', 'parts/rsportWheel.svg');}, 65);
   }
   else if(tyreTouring==true){
     reinTyres3();
     touringWheelR.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelR.setAttribute('data', 'parts/rtouringWheel.svg');}, 10);
+      touringWheelR.setAttribute('data', 'parts/rtouringWheel.svg');}, 55);
     touringWheelF.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelF.setAttribute('data', 'parts/rtouringWheel.svg');}, 15);
+      touringWheelF.setAttribute('data', 'parts/rtouringWheel.svg');}, 65);
   }
 }
 let crimsonTyres = () => {
@@ -820,28 +820,28 @@ let crimsonTyres = () => {
     reinTyres1();
     cruiserWheelR.removeAttribute('data');
     setTimeout(()=>{
-      cruiserWheelR.setAttribute('data', 'parts/crcruiserWheel.svg');}, 10);
+      cruiserWheelR.setAttribute('data', 'parts/crcruiserWheel.svg');}, 55);
     cruiserWheelF.removeAttribute('data');
     setTimeout(()=>{
-    cruiserWheelF.setAttribute('data', 'parts/crcruiserWheel.svg');}, 15);
+    cruiserWheelF.setAttribute('data', 'parts/crcruiserWheel.svg');}, 65);
   }
   else if(tyreSport==true){
     reinTyres2();
     sportWheelR.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelR.setAttribute('data', 'parts/crsportWheel.svg');}, 10);
+      sportWheelR.setAttribute('data', 'parts/crsportWheel.svg');}, 55);
     sportWheelF.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelF.setAttribute('data', 'parts/crsportWheel.svg');}, 15);
+      sportWheelF.setAttribute('data', 'parts/crsportWheel.svg');}, 65);
   }
   else if(tyreTouring==true){
     reinTyres3();
     touringWheelR.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelR.setAttribute('data', 'parts/crtouringWheel.svg');}, 10);
+      touringWheelR.setAttribute('data', 'parts/crtouringWheel.svg');}, 55);
     touringWheelF.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelF.setAttribute('data', 'parts/crtouringWheel.svg');}, 15);
+      touringWheelF.setAttribute('data', 'parts/crtouringWheel.svg');}, 65);
   }
 }
 let tranquilTyres = () => {
@@ -859,28 +859,28 @@ let tranquilTyres = () => {
     reinTyres1();
     cruiserWheelR.removeAttribute('data');
     setTimeout(()=>{
-      cruiserWheelR.setAttribute('data', 'parts/trcruiserWheel.svg');}, 10);
+      cruiserWheelR.setAttribute('data', 'parts/trcruiserWheel.svg');}, 55);
     cruiserWheelF.removeAttribute('data');
     setTimeout(()=>{
-    cruiserWheelF.setAttribute('data', 'parts/trcruiserWheel.svg');}, 15);
+    cruiserWheelF.setAttribute('data', 'parts/trcruiserWheel.svg');}, 65);
   }
   else if(tyreSport==true){
     reinTyres2();
     sportWheelR.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelR.setAttribute('data', 'parts/trsportWheel.svg');}, 10);
+      sportWheelR.setAttribute('data', 'parts/trsportWheel.svg');}, 55);
     sportWheelF.removeAttribute('data');
     setTimeout(()=>{
-      sportWheelF.setAttribute('data', 'parts/trsportWheel.svg');}, 15);
+      sportWheelF.setAttribute('data', 'parts/trsportWheel.svg');}, 65);
   }
   else if(tyreTouring==true){
     reinTyres3();
     touringWheelR.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelR.setAttribute('data', 'parts/trtouringWheel.svg');}, 10);
+      touringWheelR.setAttribute('data', 'parts/trtouringWheel.svg');}, 55);
     touringWheelF.removeAttribute('data');
     setTimeout(()=>{
-      touringWheelF.setAttribute('data', 'parts/trtouringWheel.svg');}, 15);
+      touringWheelF.setAttribute('data', 'parts/trtouringWheel.svg');}, 65);
   }
 }
 
@@ -1135,7 +1135,7 @@ let cyanHead = () => {
       dualHead.setAttribute('data', 'parts/cydualHead.svg');}, 50);
   }
   else if(headBroad==true){
-    reinHandle2();
+    reinHead2();
     broadHead.removeAttribute('data');
     setTimeout(()=>{
      broadHead.setAttribute('data', 'parts/cybroadHead.svg');}, 50);
@@ -1447,12 +1447,14 @@ let reinBrake = () => {
   setTimeout(()=> applyBrake(waveSelect), 20);
   waveSelect.style.display = 'block';
   forgedBrakeT.textContent = 'Wave Rotor';
+  brakeWave = true;
 }
 let reinBrake1 = () => {
   removeAllBrake();
   setTimeout(()=> applyBrake(crossSelect), 20);
   crossSelect.style.display = 'block';
   forgedBrakeT.textContent = 'Cross Slotted';
+  brakeCross = true;
 }
 
 let reinBrake2 = () => {
@@ -1460,6 +1462,10 @@ let reinBrake2 = () => {
   setTimeout(()=> applyBrake(drilledSelect), 20);
   drilledSelect.style.display = 'block';
   forgedBrakeT.textContent = 'Drilled rotor';
+  brakeWave = false;
+  brakeDrilled = true;
+  brakeCross = false;
+  brakeMag = false;
 }
 
 let reinBrake3 = () => {
@@ -1467,6 +1473,7 @@ let reinBrake3 = () => {
   setTimeout(()=> applyBrake(magSelect), 20);
   magSelect.style.display = 'block';
   forgedBrakeT.textContent = 'Mag Expanded';
+  brakeMag = true;
 }
 
 let tranquilBrake = () => {
@@ -1485,8 +1492,9 @@ let tranquilBrake = () => {
   }
   else if(brakeDrilled==true){
     reinBrake2();
+    drilledSelect.removeAttribute('data');
     setTimeout(()=>{
-    drilledSelect.setAttribute('src', 'parts/trdrilledBrake.png');}, 50);
+    drilledSelect.setAttribute('data', 'parts/trbrakeDrilled.svg');}, 50);
   }
   else if(brakeMag==true){
     reinBrake3();
@@ -1507,12 +1515,12 @@ let cyanBrake = () => {
     reinBrake1();
     crossSelect.removeAttribute('src');
     setTimeout(()=>{
-      crossSelect.setAttribute('src', 'parts/cycrossBrake.svg');}, 50);
+      crossSelect.setAttribute('src', 'parts/cybrakeCross.svg');}, 50);
   }
   else if(brakeDrilled==true){
     reinBrake2();
     setTimeout(()=>{
-    drilledSelect.setAttribute('src', 'parts/cydrilledBrake.png');}, 50);
+    drilledSelect.setAttribute('data', 'parts/cybrakeDrilled.svg');}, 50);
   }
   else if(brakeMag==true){
     reinBrake3();
@@ -1538,7 +1546,7 @@ let ravenBrake = () => {
   else if(brakeDrilled==true){
     reinBrake2();
     setTimeout(()=>{
-    drilledSelect.setAttribute('src', 'parts/rdrilledBrake.png');}, 50);
+    drilledSelect.setAttribute('data', 'parts/rbrakeDrilled.svg');}, 50);
   }
   else if(brakeMag==true){
     reinBrake3();
@@ -1564,7 +1572,7 @@ let crimsonBrake= () => {
   else if(brakeDrilled==true){
     reinBrake2();
     setTimeout(()=>{
-    drilledSelect.setAttribute('src', 'parts/crdrilledBrake.png');}, 50);
+    drilledSelect.setAttribute('data', 'parts/crbrakeDrilled.svg');}, 50);
   }
   else if(brakeMag==true){
     reinBrake3();
